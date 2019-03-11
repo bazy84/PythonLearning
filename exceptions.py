@@ -3,10 +3,9 @@ def convert(s):
     try:
         x = int(s)
         print("Conversion succeeded! x =", x)
-    except ValueError:
+    except (ValueError, TypeError):
         print("Conversion failed!")
         x = -1
-    except TypeError:
-        print("Conversion Failed!")
-        x = -1
     return x
+
+# IndentationError, SyntaxError and NameError: You should NOT normally catch this!
