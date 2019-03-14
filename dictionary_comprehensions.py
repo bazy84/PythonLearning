@@ -8,6 +8,9 @@ country_to_capital = {'United Kingdom': 'London',
 #pdb.set_trace()
 capital_to_country = {capital: country for country, capital in country_to_capital.items()}
 
+#for lists
+#[ expr(item) for item in iterable ]
+
 def main():
     pp(country_to_capital)
     pp(capital_to_country)
